@@ -1,0 +1,52 @@
+// Emoji convertion tables
+//
+// Format
+//   @(Char)=(Emoji-Name)
+//
+// Supported Chars
+//    !"#$%&'*+,-.0123456789:;<=>?ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+//
+// Not Supported Chars
+//    @/()
+//
+@-=cloud
+@o=tomato
+
+// Multiple Commented Out.
+// - Nesting is not supported.
+// - '/*' and '*/' must be at the line head.
+/*
+-------
+-------
+-------
+-------
+-------
+*/
+
+// R
+-ooooo-
+-o---o-
+-oooo--
+-o-o---
+-o--oo-
+
+// '@br' is a mark to insert a blank line.
+@br
+@br
+
+// B
+-oooo--
+-o---o-
+-oooo--
+-o---o-
+-oooo--
+
+@br
+@br
+
+// G
+--oooo-
+-o-----
+-o-ooo-
+-o---o-
+--ooo--
