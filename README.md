@@ -4,7 +4,7 @@ A tool to help you create Emoji Art.
 
 ## Demo
 
-```cmd
+```
 $ type demo.emojin
 @o=:imp:
 @-=:no_mouth:
@@ -23,14 +23,14 @@ $ python emojin.py demo.emojin | clip
 
 And paste it.
 
-:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:
-:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:
-:imp::imp::imp::no_mouth::no_mouth::imp::imp::imp:
-:no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth:
-:no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth:
-:imp::imp::imp::no_mouth::no_mouth::imp::imp::imp:
-:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:
-:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:
+:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:  
+:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:  
+:imp::imp::imp::no_mouth::no_mouth::imp::imp::imp:  
+:no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth:  
+:no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth::no_mouth:  
+:imp::imp::imp::no_mouth::no_mouth::imp::imp::imp:  
+:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:  
+:no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:  
 
 ## Requirement
 
