@@ -23,7 +23,8 @@
 -------
 */
 
-// R
+// '@@foobar' is a raw output of 'foobar'.
+@@# R
 -ooooo-
 -o---o-
 -oooo--
@@ -34,7 +35,7 @@
 @br
 @br
 
-// G
+@@# G
 --oooo-
 -o-----
 -o-ooo-
@@ -44,7 +45,7 @@
 @br
 @br
 
-// B
+@@# B
 -oooo--
 -o---o-
 -oooo--

@@ -75,15 +75,26 @@ for i, line in enumerate(lines):
         outlines.append('')
         continue
 
+    # raw output.
+    #  @@foobar
+    #    ^^^^^^
+    #     output here.
+    if len(line)>3 and line[0]=='@' and line[1]=='@':
+        line = line[2:]
+        outlines.append(line)
+        continue
+
     # assigning to the convertion table.
     #  @a=emojiname
     #  ^ ^
+    #   grammer check this two point.
     if len(line)>3 and line[0]=='@' and line[2]=='=':
         key = line[1]
         value = line[3:].replace(':', '').lower()
         convertion_table.append((key, value))
         continue
 
+    # emoji art line output.
     if use_last_space:
         line = line + '  '
     outlines.append(line)
