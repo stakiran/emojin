@@ -20,21 +20,25 @@ def abort(msg):
     p('Error: {0}'.format(msg))
     exit(1)
 
-def usage():
-    msg = """[Usage]
-python {0} (EmojinDataFilepath) """.format(MYFILENAME)
-    p(msg)
-    exit(0)
+def parse_arguments():
+    import argparse
 
-def arg2datafile():
-    if len(sys.argv)<=1:
-        usage()
-    return sys.argv[1]
+    parser = argparse.ArgumentParser(
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
+    )
+    parser.add_argument('-i', '--input', required=True)
+    parser.add_argument('--gfm', default=False, action='store_true',
+        help='Insert two-spaces to each line for line-breaking on GFM.')
+
+    parsed_args = parser.parse_args()
+    return parsed_args
 
 MYDIR = os.path.abspath(os.path.dirname(__file__))
 MYFILENAME = os.path.basename(__file__)
 
-infile = arg2datafile()
+args = parse_arguments()
+infile = args.input
+use_last_space = args.gfm
 
 if not(os.path.exists(infile)):
     abort('Datafile "{0}" does not exists.'.format(infile))
@@ -80,6 +84,8 @@ for i, line in enumerate(lines):
         convertion_table.append((key, value))
         continue
 
+    if use_last_space:
+        line = line + '  '
     outlines.append(line)
 
 # convertion

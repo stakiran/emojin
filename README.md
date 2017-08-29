@@ -4,6 +4,8 @@ A tool to help you create Emoji Art.
 
 ## Demo
 
+Write a emojin file.
+
 ```
 $ type demo.emojin
 @o=:imp:
@@ -17,11 +19,15 @@ ooo--ooo
 ooo--ooo
 --o--o--
 --o--o--
-
-$ python emojin.py demo.emojin | clip
 ```
 
-And paste it.
+Do emojin.py
+
+```
+$ python emojin.py -i demo.emojin --gfm | clip
+```
+
+And paste it to your markdown file.
 
 :no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:  
 :no_mouth::no_mouth::imp::no_mouth::no_mouth::imp::no_mouth::no_mouth:  
@@ -34,27 +40,43 @@ And paste it.
 
 ## Requirement
 
-- Python2.7
-- Windows7+
-  - Maybe works :ok: on Linux, but not tested yet.
+- Python 2.7
+- Windows 7+
+  - Maybe works on Linux, but not tested yet.
 
 ## Install
 
 - git clone https://github.com/stakiran/emojin
 
-## Usage
+## How to use
+Simple use:
 
 - 1: Create your emojin file.
-- 2: python emojin.py (your-emojin0-file)
+- 2: python emojin.py (your-emojin-file)
 - 3: Copy outputs and paste it.
 
-## Detail
+Detail of emojin file:
 
 - For more detail about how to write emojin file, See [sample.emojin](sample.emojin).
-- A Emojin file is a text simply, so you can use another file-type. (i.e. `.txt`)
+- A Emojin file is a text simply, so you can also use another file-type. (i.e. `.txt`)
+
+## Usage
+
+```Terminal
+$ python emojin.py -h
+usage: emojin.py [-h] -i INPUT [--gfm]
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i INPUT, --input INPUT
+  --gfm                 Insert two-spaces to each line for line-breaking on
+                        GFM. (default: False)
+```
 
 ## License
+
 [MIT License](LICENSE)
 
 ## Author
+
 [stakiran](https://github.com/stakiran)
